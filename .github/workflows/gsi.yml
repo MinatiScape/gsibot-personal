@@ -1,4 +1,4 @@
-name: BoboBot automated
+name: GSIBot automated
  
 on: push
 
@@ -58,7 +58,7 @@ jobs:
              echo "bot-sf-user=${{ secrets.SFUSER }}" >> "sf-creds.config"
              echo "bot-send-announcement=true" >> "sf-creds.config"
              echo "bot-sf-proj=${{ secrets.PROJECT }}" >> "sf-creds.config"
-             echo "bot-announcement-id=-1001446520361" >> "sf-creds.config"
+             echo "bot-announcement-id=-1001232482562" >> "sf-creds.config"
              echo "bot-sf-pass=${{ secrets.SFPASS }}" >> "sf-creds.config"
              echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.config"
        - name: Run Bot
@@ -73,7 +73,7 @@ jobs:
          timeout-minutes: 1
          run: |
               mkdir loop
-              git clone https://github.com/nnippon/gsibot-personal loop/loop
+              git clone https://github.com/sinhaaryan03/gsibot-personal loop/loop
               cd loop/loop
               echo "1" >> loop.txt
               git add .
