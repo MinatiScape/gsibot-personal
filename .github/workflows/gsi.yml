@@ -43,15 +43,15 @@ jobs:
          continue-on-error: true
          timeout-minutes: 1
          run: |
-             rm -rf configs/config.prop && rm -rf configs/sf-creds.config
+             rm -rf configs/configs.prop && rm -rf configs/sf-creds.config
              cd configs
-             touch config.prop
-             echo "#Bo³+t config file" >> "config.prop"
-             echo "#Sun Jan 10 09:00:49 Jer 2021" >> "config.prop"
+             touch configs.prop
+             echo "#Bo³+t config file" >> "configs.prop"
+             echo "#Sun Jan 10 09:00:49 Jer 2021" >> "configs.prop"
              echo "bot-username=${{ secrets.BOTUN }}" >> "config.prop"
-             echo "bot-token=${{ secrets.BOTKEY }}" >> "config.prop"
-             echo "bot-master=minatiscape" >> "config.prop"
-             echo "bot-submaster=${{ secrets.SUBKEY }}" >> "config.prop"
+             echo "bot-token=${{ secrets.BOTKEY }}" >> "configs.prop"
+             echo "bot-master=minatiscape" >> "configs.prop"
+             echo "bot-submaster=${{ secrets.SUBKEY }}" >> "configs.prop"
              touch sf-creds.config
              echo "#Config file" >> "sf-creds.config"
              echo "#Sun Jan 10 09:00:49 Jer 2021" >> "sf-creds.config"
