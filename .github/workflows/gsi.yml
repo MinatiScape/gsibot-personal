@@ -43,7 +43,7 @@ jobs:
          continue-on-error: true
          timeout-minutes: 1
          run: |
-             rm -rf configs/configs.prop && rm -rf configs/sf-creds.config
+             rm -rf configs/configs.prop && rm -rf configs/sf-creds.prop
              cd configs
              touch configs.prop
              echo "#Bo³+t config file" >> "configs.prop"
