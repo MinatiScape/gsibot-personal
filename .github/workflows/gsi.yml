@@ -48,7 +48,7 @@ jobs:
              touch configs.prop
              echo "#Bo³+t config file" >> "configs.prop"
              echo "#Sun Jan 10 09:00:49 Jer 2021" >> "configs.prop"
-             echo "bot-username=${{ secrets.BOTUN }}" >> "config.prop"
+             echo "bot-username=${{ secrets.BOTUN }}" >> "configs.prop"
              echo "bot-token=${{ secrets.BOTKEY }}" >> "configs.prop"
              echo "bot-master=863642568" >> "configs.prop"
              echo "bot-submaster=${{ secrets.SUBKEY }}" >> "configs.prop"
