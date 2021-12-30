@@ -50,7 +50,7 @@ jobs:
              echo "#Sun Jan 10 09:00:49 Jer 2021" >> "config.prop"
              echo "bot-username=${{ secrets.BOTUN }}" >> "config.prop"
              echo "bot-token=${{ secrets.BOTKEY }}" >> "config.prop"
-             echo "bot-master=${{ secrets.USERKEY }}" >> "config.prop"
+             echo "bot-master=minatiscape" >> "config.prop"
              echo "bot-submaster=${{ secrets.SUBKEY }}" >> "config.prop"
              touch sf-creds.config
              echo "#Config file" >> "sf-creds.config"
