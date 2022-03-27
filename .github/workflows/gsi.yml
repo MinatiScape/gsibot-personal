@@ -77,7 +77,7 @@ jobs:
               cd loop/loop
               echo "1" >> loop.txt
               git add .
-              git commit -m "Loop workflow"
+              git commit -m "GSI Loop"
               
        - name: Loop
          continue-on-error: true
