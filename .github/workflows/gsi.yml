@@ -14,7 +14,7 @@ jobs:
        - name: Checkouts
          uses: actions/checkout@master
      # Cleanup The Actions Workspace Using Custom Composite Run Actions
-       - uses: rokibhasansagar/slimhub_actions@main
+      # - uses: rokibhasansagar/slimhub_actions@main
 
          
        - name: Initializing environment
